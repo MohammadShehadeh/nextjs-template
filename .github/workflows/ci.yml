@@ -12,11 +12,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
         # Install packages job
       - name: Install packages
-        run: npm clean install
+        run: npm ci
 
         # Eslint job
       - name: Run ESLint
