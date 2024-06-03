@@ -16,7 +16,7 @@ jobs:
 
         # Install packages job
       - name: Install packages
-        run: npm clean install
+        run: npm ci
 
         # Eslint job
       - name: Run ESLint
