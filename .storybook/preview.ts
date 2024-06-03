@@ -1,5 +1,7 @@
 import type { Preview } from '@storybook/react';
 
+import '../next.fonts';
+
 const preview: Preview = {
   parameters: {
     controls: {

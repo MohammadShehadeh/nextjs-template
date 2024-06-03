@@ -18,9 +18,13 @@
     "**/*": "prettier --write --ignore-unknown"
   },
   "dependencies": {
+    "@t3-oss/env-nextjs": "^0.10.1",
+    "classnames": "^2.5.1",
     "next": "14.2.3",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "sass": "^1.77.4",
+    "zod": "^3.23.8"
   },
   "devDependencies": {
     "@eslint/js": "^9.4.0",

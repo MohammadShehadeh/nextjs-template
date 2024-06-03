@@ -37,7 +37,8 @@
         "react/no-unescaped-entities": "off",
         "@typescript-eslint/consistent-type-imports": "error",
         "@typescript-eslint/array-type": ["error", { "default": "generic" }],
-        "no-relative-import-paths/no-relative-import-paths": ["warn", { "allowSameFolder": true, "prefix": "@" }]
+        "no-relative-import-paths/no-relative-import-paths": ["warn", { "allowSameFolder": true, "prefix": "@" }],
+        "react/jsx-curly-brace-presence": ["error", { "props": "never", "children": "ignore" }]
       }
     },
     {
