@@ -38,7 +38,19 @@
         "@typescript-eslint/consistent-type-imports": "error",
         "@typescript-eslint/array-type": ["error", { "default": "generic" }],
         "no-relative-import-paths/no-relative-import-paths": ["warn", { "allowSameFolder": true, "prefix": "@" }],
-        "react/jsx-curly-brace-presence": ["error", { "props": "never", "children": "ignore" }]
+        "react/jsx-curly-brace-presence": ["error", { "props": "never", "children": "ignore" }],
+        "no-restricted-imports": [
+          "error",
+          {
+            "name": "next/link",
+            "message": "Please import from `@/navigation` instead."
+          },
+          {
+            "name": "next/navigation",
+            "importNames": ["redirect", "permanentRedirect", "useRouter", "usePathname"],
+            "message": "Please import from `@/navigation` instead."
+          }
+        ]
       }
     },
     {

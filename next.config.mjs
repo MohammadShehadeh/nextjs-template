@@ -1,10 +1,16 @@
+import createNextIntlPlugin from 'next-intl/plugin';
+
+const withNextIntl = createNextIntlPlugin();
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   poweredByHeader: false,
-  skipTrailingSlashRedirect: true,
+  // Disabling trailing slash as Google Search Console
+  // prefers avoiding forced trailing slash redirects
   trailingSlash: false,
+  skipTrailingSlashRedirect: true,
 };
 
-export default nextConfig;
+export default withNextIntl(nextConfig);
